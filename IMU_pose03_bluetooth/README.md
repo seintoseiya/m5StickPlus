@@ -9,7 +9,7 @@ System requirements
 How to run
 ----------
 - bluetoothの接続は、M5StickPlusをと以下のUnityAppもしくはSerialMonitorを起動した状態で `M5StickCPlusBT` というDeviceIdに接続（Macの場合、M5StickPlusを起動しただけではダメで、受け手のApp等を起動しないと接続できない）
-- [/SampleUnityApp](/SampleUnityApp) : 出力のサンプルとしてCubeが回転するだけのUnityApp
+- [/SampleUnityApp/M5StickPlus](https://github.com/seintoseiya/m5StickPlus/tree/main/IMU_pose03_bluetooth/SampleUnityApp/M5StickPlus) : 出力のサンプルとしてCubeが回転するだけのUnityApp
 - M5StickPlusの液晶を上面右側に来る様にして設置して、M5ボタンを押下することでキャリブレーションを開始
 
 TODO
