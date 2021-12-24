@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RecieveSerial : MonoBehaviour
 {
-    //先ほど作成したクラス
     public SerialHandler serialHandler;
     public GameObject obj;
+    public Text countText;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class RecieveSerial : MonoBehaviour
     {
         //文字列を送信
         //serialHandler.Write("hogehoge");
+        countText.text = "回転数：" + Store.Cnt;
     }
 
     //受信した信号(message)に対する処理
@@ -32,6 +34,7 @@ public class RecieveSerial : MonoBehaviour
             if(data[0].Contains("Calibration Init!!!!!"))
             {
                 Debug.Log(data[0]);
+                Store.Cnt = 0;
             }
             else if (data[0].Contains("Calibration Finish!!!!!"))
             {
